@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>charity: water — Landing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="img/logo.png" alt="charity: water logo" class="brand-logo" style="height: 28px; width: auto; border-radius: 4px; margin-right: 8px;">
+        <span class="brand-text">charity: water</span>
+      </div>
+      <a class="btn btn-give" href="#donate">GIVE NOW</a>
+    </div>
+    <div class="top-rule" aria-hidden="true"></div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <!-- Left: copy + CTAs -->
+        <div class="hero-copy">
+          <h1>
+            HELP BRING <span class="yellow">CLEAN</span><br />
+            <span class="yellow">WATER</span> TO EVERY<br />
+            PERSON ON EARTH
+          </h1>
+
+          <p class="intro">
+            Charity: Water is a global nonprofit organization dedicated to providing access to
+            clean and safe drinking water for people worldwide. We bring hope, health, and
+            opportunity to communities in need, and together, we have the power to change
+            millions of lives.
+          </p>
+
+          <!-- Email capture -->
+          <form class="email-form" action="#" method="post">
+            <div class="input-wrap">
+              <span class="mail-icon" aria-hidden="true">✉</span>
+              <input type="email" name="email" placeholder="Enter your email" aria-label="Email" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div> <!-- <-- This closing tag was missing! -->
+
+        <!-- Right: image -->
+        <div class="hero-media">
+          <img
+            src="img/img.girl.jpg"
+            alt="Child enjoying clean water"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Impact -->
+    <section class="impact" id="impact">
+      <div class="container">
+        <h2>OUR IMPACT</h2>
+        <p class="impact-lede">
+          Since we began our journey in 2006, we have made an impact in over 25 countries,
+          done over 100,000 projects, and helped over 20 million people.
+        </p>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-value">100K+</div>
+            <div class="stat-label">Water Projects<br />Funded</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">29</div>
+            <div class="stat-label">Countries<br />Helped</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">20M+</div>
+            <div class="stat-label">People Served</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donate anchor -->
+    <section id="donate" class="donate">
+      <div class="container donate-inner">
+        <h3>Ready to make a difference?</h3>
+        <p>Your gift brings hope and health to families around the world.</p>
+        <a class="btn btn-give-large" href="#">Donate Today</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 charity: water. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+

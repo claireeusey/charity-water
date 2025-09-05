@@ -1,0 +1,207 @@
+/* ===== charity: water brand-only palette ===== */
+:root{
+  --yellow:#FFC907;
+  --navy:#003366;
+  --lt-blue:#77A8BB;
+  --cream:#FFF7E1;
+  --black:#1A1A1A;
+  --peach:#FEDBC1;
+  --terra:#BF6C46;
+  --gray:#CBCCD1;
+
+  --radius:14px;
+  --shadow:0 8px 24px rgba(26,26,26,.10); /* black at 10% */
+}
+
+/* ===== Base ===== */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Avenir", "Inter", Arial, sans-serif;
+  color:var(--black);
+  background: var(--gray);
+  line-height:1.5;
+}
+img{max-width:100%;display:block}
+.container{width:min(1120px,92vw);margin:0 auto}
+
+/* ===== Header ===== */
+.site-header{background:#fff; box-shadow: var(--shadow); position:sticky; top:0; z-index:50}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:.55rem;font-weight:600;color:var(--black)}
+.brand-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+.brand-mark{background:var(--yellow); color:var(--black); width:22px; height:22px; border-radius:4px; display:grid; place-items:center; font-size:.85rem; line-height:1}
+.brand-text{letter-spacing:.2px}
+.btn{display:inline-block;border-radius:10px;padding:10px 16px;font-weight:600;text-decoration:none;border:0;cursor:pointer;transition:transform .12s ease, opacity .2s ease, box-shadow .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn-give{background:var(--yellow); color:var(--black); box-shadow: var(--shadow)}
+.top-rule{height:10px;background:var(--navy)}
+
+/* ===== Hero ===== */
+.hero{background: var(--cream); padding:48px 0 36px}
+.hero-grid{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:28px}}
+
+.hero-copy, .hero-media {
+  flex: 1 1 320px;
+  min-width: 280px;
+}
+
+.hero-media {
+  text-align: center;
+}
+
+.hero-media img{
+  width: 100%;
+  max-width: 340px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 700px) {
+  .hero-grid {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+
+.hero-copy h1{
+  font-size:clamp(28px,5vw,56px);
+  line-height:1.05;
+  margin:0 0 16px;
+  letter-spacing:.2px;
+  color:var(--navy);
+}
+.hi-yellow {
+  color: var(--yellow);
+  background: none;
+  padding: 0;
+}
+
+.intro{color:#333; max-width:56ch; margin:0 0 18px}
+
+.email-form{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0 14px}
+.input-wrap{
+  background:#fff;
+  border:1.5px solid var(--gray);
+  border-radius:999px;
+  display:flex;align-items:center;gap:8px;padding:10px 14px;min-width:280px;
+  box-shadow: var(--shadow);
+}
+.input-wrap:focus-within{border-color:var(--lt-blue)}
+.mail-icon{opacity:.7}
+.input-wrap input{border:0;outline:0;background:transparent;width:260px;font-size:16px;color:var(--black)}
+
+.btn-primary{background:var(--navy); color:#fff}
+.btn-yellow{background:var(--yellow); color:var(--black); box-shadow: var(--shadow)}
+.btn-navy{background:var(--navy); color:#fff}
+.cta-row{display:flex;gap:12px;align-items:center;margin-top:6px}
+
+/* ===== Impact ===== */
+.impact{background:#fff;padding:36px 0 40px}
+.impact h2{color:var(--navy);letter-spacing:.3px;margin:0 0 6px}
+.impact-lede{color:#333;max-width:70ch;margin:0 0 20px}
+.stat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:720px){.stat-grid{grid-template-columns:1fr;gap:12px}}
+
+.stat-card{
+  background:#fff;border-radius:16px;padding:22px 18px;
+  box-shadow: var(--shadow);
+  border:1px solid var(--gray);
+  text-align:center;
+}
+.stat-value{font-size:clamp(26px,5vw,34px);font-weight:800;color:var(--yellow)}
+.stat-label{color:var(--navy);font-weight:600;line-height:1.25}
+
+/* ===== Donate band ===== */
+.donate{background: var(--cream); padding:34px 0 46px}
+.donate-inner{text-align:center}
+.donate h3{margin:0 0 6px;color:var(--black)}
+.donate p{margin:0 0 14px; color:#333}
+.btn-give-large{background:var(--yellow); color:var(--black); padding:14px 24px; border-radius:12px; box-shadow: var(--shadow)}
+
+/* ===== Footer ===== */
+.site-footer{padding:26px 0;color:#333;font-size:.95rem;text-align:center;background:#fff}
+
+/* Responsive header logo and text */
+@media (max-width: 600px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .brand-logo {
+    height: 22px !important;
+    margin-right: 6px !important;
+  }
+  .btn-give {
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
+  }
+}
+
+/* Responsive hero section */
+@media (max-width: 900px) {
+  .hero-grid {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .hero-copy, .hero-media {
+    min-width: 0;
+    width: 100%;
+  }
+  .hero-media img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .hero-copy h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Responsive stat grid */
+@media (max-width: 720px) {
+  .stat-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .stat-card {
+    padding: 18px 10px;
+  }
+}
+
+/* Responsive donate section */
+@media (max-width: 600px) {
+  .donate {
+    padding: 20px 0 28px;
+  }
+  .donate-inner h3 {
+    font-size: 1.1em;
+  }
+  .btn-give-large {
+    width: 100%;
+    font-size: 1em;
+    padding: 12px 0;
+  }
+}
+
+/* Responsive footer */
+@media (max-width: 600px) {
+  .site-footer {
+    font-size: 0.85em;
+    padding: 16px 0;
+  }
+}
